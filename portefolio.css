@@ -1,0 +1,358 @@
+*{                              /* l'étoile est un sélecteur universel que veut 
+                               qu'on applique ces 3 propriétés à toutes les balises de la page web*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{                                           /* Ce sélecteur body c'est pour définir la police des textes*/
+    font-family: Arial, sans-serif;
+    background: #1a1a2e;
+    color: #eee;                                       /* couleur des textes*/
+    line-height: 1.6;                                    /*hauteur entre les lignes de textes pour une bonne visibilité*/
+}
+
+.header{
+    position: fixed;                                     /* pour que le header ne bouge pas*/
+    top: 0;                                              /*pas de padding ni de margin*/
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #37961a;
+    background: #0f0f23;
+    z-index: 100;                              /* pour qu'en défilant la page du site les choses passent en dessous du nom du header qui est en haut*/
+}
+
+
+.container{
+    max-width: 1000px; 
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+
+.bar{
+    display: flex;
+    justify-content: space-between;    /* met l'espace entre les textes et les objets qui sont sur header*/
+    align-items: center;            /* veut dire centrer verticalement */
+    height: 60px; 
+}
+
+a{
+    color: #4da6ff;
+   text-decoration: none;         /* Pour enlever le soulignement d'un lien */
+}
+
+.logo img{                /*ceci concerne uniquement l'image du logo*/
+    display: block;
+    height: 36px;
+    width: auto;
+    border-radius: 50%;    /* pour rendre le logo rond*/
+}
+
+.logo{                       /* cette classe concerne le logo et son nom*/
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff; 
+}
+.s{
+    color: red;
+}
+
+.t{
+    color: rgb(143, 139, 139);
+    
+}
+
+.i{
+    color: rgb(8, 133, 45);
+    padding-left: 0.12rem;         
+}
+
+.menu-btn{                              /*style du bouton*/
+    display: block;
+    font-size: 1.5rem;                 /*1rem= 16px*/
+    background: none;                  /*que l'icone du menu n'est pas de couleur de fond*/
+    border: 1px solid #555;
+    color: #fff;
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.menu{
+    display: none;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 0;
+    background: #16213e;
+    padding: 1rem;
+    z-index: 99;
+
+}
+
+.menu.open{
+    display: block;
+}
+
+.menu ul{
+    list-style: none;
+
+}
+
+.menu li {
+    margin-bottom: 0.5rem;
+
+}
+
+.menu a {
+    display: block;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.menu a:hover{
+    background: rgb(63, 95, 63);
+   
+}
+
+
+/* affichage écran ordinateur*/
+ @media (min-width: 768px){ 
+       .header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 1rem;
+       }
+       .bar{
+        flex: 1;                  /* occupe l'espace qui est disponible*/
+        max-width: 1000px;
+        padding: 0;
+       }
+       .menu-btn{
+        display: none;             /*pour cacher le menu*/
+       }
+       .menu{
+        display: block;
+        position: static;
+        background: none;
+        padding: 0;
+        width: auto;
+       }
+       .menu ul{
+        display: flex;
+        gap: 0.5rem;
+        
+       }
+       .menu li{
+        margin: 0;
+
+       }
+
+       .menu a{
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+       }
+    }
+
+    /*intégrer le contenu du menu sur l'écran du menu*/
+    /*body.menu-open{
+        overflow: hidden;             /* overflow dans le contexte de menu-open bloque la page principale web et n'ouvre que le menu*/
+    }*/
+
+    @media (min-width: 768px){                  /*si width < 768px c'est écran de téléphone, si width >= 768px c'est écran d'ordinateur*/
+    
+        body.menu-open{
+            overflow: auto;           /*pour fair apparaître la barre de défilement lorsque le texte du menu déborde*/
+        }
+    }
+    
+    
+    /* le code ci-dessous permet de styliser une section principale 
+    pour qu'elle occupe toute la largeur de l'écran et 
+    s'adapte automatiquement à la hauteur restante de la
+    fenêtre d'affichage sans provoquer de barre de défilement. */
+    .hero{ 
+        position: relative;
+        width: 100%;
+        height: calc(100vh - 60px);             /*pour ne pas scroller en utilise vh */
+        min-height: 400px;
+        overflow: hidden;                     /*Masque tout contenu, image ou animation qui
+                                  dépasse les limites de ce conteneur.*/
+    }
+
+    .hero_slides{
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .hero_slide{
+        position: absolute;
+        inset: 0;             /* inset a 4 valeurs en lui : top, left, right, bottom */
+        opacity: 0;           /*  opacity zéro :veut dire invisible*/
+        visibility: hidden;   /* l'objet sera invisible mais va garder sa place*/  /* c'est un peu comme display: none; mais celui-ci enlève carrément l'objet*/
+        transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    }
+
+    .hero_slide.is-active{
+        opacity: 1;
+        visibility: visible;
+        z-index: 1;
+    }
+
+    .hero_bg{
+        position: absolute;
+        inset: 0;
+        background-size: cover;              /* pour agrandir une seule image afin qu'elle occupe tout l'écran*/
+        background-position: center;
+        transform: scale(1);
+        transition: transform 0.5s ease;
+    }
+    
+
+    .hero_slide.is-active .hero_bg{
+        transform: scale(1.6);
+    }
+
+    .cover{
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(                                                  /*couleur de la couverture*/
+            135deg,
+            rgba(15, 15, 35, 0.85) 0%,
+            rgba(22, 33, 62, 0.7) 50%,
+            rgba(26, 26, 46, 0.85) 100%
+        );
+    }
+
+    .hero_content{
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        padding: 2rem 1rem;
+        max-width: 600px;
+    }
+
+    .hero_content h1{
+        font-size: clamp(1.75rem, 5vw, 2.5rem);    /* pour s'adapter aux 2 écrans*/
+        margin-bottom: 1rem;
+        line-height: 1.2;
+
+    }
+    .hero_content p{
+        font-size: clamp(1rem, 2vw, 1.25rem); 
+        color: #fff;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero_btn{
+        display: inline-block;
+        align-self: flex-start; /*le bouton doit être très petit*/
+        background: #37961a;
+        color: #fff;
+        padding: 0.75rem 1.5rem;
+        border-radius: 4px;
+        font-weight: bold;
+        transition: background 0.2s;
+    }
+
+    .hero_btn:hover{
+        background: #3d8fd9;
+    }
+
+    .logo:hover {
+       color: white;
+    }
+
+    .hero_dots{
+        position: absolute;     /* donne une autre position indépendante de la position principale des autres*/
+        bottom: 1.5rem;
+        left: 50%;              /* doit se situer au milieu*/
+        transform: translateX(-50%); /* déplacer un peu vers la gauche par rapport à sa position initiale*/
+        z-index: 3;
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .hero_dot{
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        background: transparent;
+        cursor: pointer;
+        transition: opacity 0.2s, background 0.2s;
+        padding: 0;
+        opacity:0.5;
+    }
+
+    .hero_dot.is-active,
+    .hero_dot:hover{
+        opacity: 1;
+        background: #4da6ff;
+        border-color: #4da6ff;
+    }
+    /*style section*/
+    .section{
+        padding: 4rem 0;
+    }
+
+    .section-titre{
+        font-size: clamp(1.5rem, 5vw, 2rem); /*pr que la taille s'adapte au tel et ) l'ordi*/
+        margin-bottom: 0.75rem;
+        color: #fff;
+    }
+    .section-titre::after{ /*tracer un petit trait en dessous du titre*/
+        content:"";
+        display: block;
+        width: 48px;
+        height: 3px;
+        margin-top:0.5rem;
+        background: #4da6ff;
+        border-radius: 4px;
+    }
+    .about{
+        display: grid;
+        gap: 2rem;
+    }
+
+    .about_text{
+        margin-bottom: 1rem;
+        color: #fff;
+    }
+    .about_list{
+        list-style: none;
+        display: flex;
+        gap: 11rem;
+    }
+
+    .about_list li{
+        padding: 1rem 1.5rem;
+        background: #16213e;
+        border-radius: 8px;
+        border-left: 3px solid #4da6ff;
+        color: #d0d0e0;
+    }
+     .about_label{
+        display: block;
+        font-size: 0.8rem;  
+        text-transform: uppercase; /* met les textex en majuscule sans passer par html*/
+        letter-spacing: 0.05rem;  /*met un petit écart entre les lettres*/
+        color: #4da6ff;
+        margin-bottom: 0.25rem;
+     }
+
+    
+

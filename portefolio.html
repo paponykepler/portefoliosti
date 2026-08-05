@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="monlogo.jpg">
+    <link rel="stylesheet" href="portefolio.css">
+    <title>cv</title>   
+    
+</head>
+
+<body>
+
+
+    <header class="header">
+
+    <div class="container bar">                                                                                       <!-- ici on a deux classes-->
+        <a href="#accueil" class="logo">
+            <img src="monlogo.jpg"  alt="logo">
+            <span class="s">S<span class="t">T</span><span class="i">I </span></span>
+        </a>
+         <button type="button" aria-label="Ouvrir le menu" class="menu-btn" id="menu-btn" >  ☰ </button>      <!-- Création du bouton de l'icone menu-->
+    </div>                                                                                                     <!-- aria-label: donne une accessibilité à l'icone du menu-->
+
+    
+    <nav class="menu" id="menu">
+        <ul>
+            <li> <a href="#accueil"> Accueil</a></li>
+            <li> <a href="#a propos"> A propos</a></li>
+            <li> <a href="#competences"> Compétences</a></li>
+            <li> <a href="#projet"> Projets</a></li>
+            <li> <a href="#contact"> Contact</a></li>
+        </ul>
+    </nav>
+
+    </header>
+
+
+
+    <main>
+       <section  class="hero" id="hero">
+           <div class="hero_slides">
+              <article class="hero_slide  is-active">
+
+                <div class="hero_bg" style="background-image: url(image1.jpg);"></div>
+                <div class="cover"></div>
+
+                <div class="hero_content">
+                    <h1> Developpeur Web</h1>
+                    <p>Je crée des sites web modernes accessibles et adaptés à tous les écrans</p>
+                    <a href="#" class="hero_btn"> Voir mes projets</a>
+                </div>
+              </article>
+
+              <article class="hero_slide">
+                <div class="hero_bg" style="background-image: url(image4.jpg);"></div>
+                <div class="cover"></div>
+
+                <div class="hero_content">
+                <h1> Html, CSS, JavaScript</h1>
+                <p> Des interfaces soignées avec code clair et facile à maintenir</p>
+                <a href="#" class="hero_btn"> Mes compétences</a>
+                </div>
+              </article>
+
+              <article class="hero_slide">
+                <div class="hero_bg" style="background-image: url(image2.jpg);"></div>
+                <div class="cover"></div>
+
+                  <div>
+                  <h1> Travaillons ensemble</h1>  
+                  <p> Disponible pour des projets, stages ou collaborations</p>
+                  <a href="#" class="hero_btn"> Me contacter</a>
+                  </div>
+              </article>
+                
+            </div>
+  <!-- création des boutons qui vont permettre à l'utilisateur de revenir en arrière-->           
+            <div class="hero_dots" role="tablist"  aria-label=" choisir une diapositive">
+                <button type=" button" class=" hero_dot is-active" aria-label=" diapositive 1" aria-current="true"></button>
+                <button type=" button" class=" hero_dot" aria-label=" diapositive 2"></button>
+                <button type=" button" class=" hero_dot"  aria-label=" diapositive 3"></button>
+            </div>
+        
+       </section>
+            
+
+
+
+         
+    </main>
+    <!--a propos-->
+            <section class="section" id="a propos">
+                <div class="container">
+                   <h2 class="section-titre">A propos de moi</h2>
+                   <div class="about">     <!--about = à propos-->
+                      <div class="about_text">
+                         <p>Je suis <strong> STI </strong> , développeur web passionné par la création d'expériences 
+                            numériques claire, performantes et accessibles.</p>
+                         <p>J'aime transformer des idées en interfaces soignées du prototype au
+                             déployement, en m'appuyant sur des bases solides en HTML, CSS et JavaScript.</p>
+                      </div>
+                      <ul class="about_list">
+                        <li><span class="about_label">Spécialité</span> Frontend et interface responsive</li>
+                        <li><span class="about_label">Approche</span> Code propre maintenable et documenté</li>
+                        <li><span class="about_label">Disponibilités</span> Pojets, stages et collaborations</li>
+                      </ul>
+                   </div>
+                </div>
+            </section>
+
+            <!--compétences-->
+            <section class="section">
+                <div>
+                  <h2> Mes compétences</h2>  
+                  <ul>
+                    <li> Front-end : HTML5, CSS3, JavaScript (React, Vue.js).</li>
+                    <li>Back-end : Node.js, PHP (Laravel), bases de données (SQL, MongoDB).</li>
+                    <li>Outils : Git, GitHub, Docker, Figma.</li>
+                    <li>Bonnes pratiques : Design adaptatif (mobile), SEO de base, code propre.</li>
+                    
+                  </ul>
+                </div>
+            </section>
+
+            <!--services-->
+            <section class="section">
+                <div>
+                   <h2> Mes services</h2> 
+                   <li>Création de sites internet sur mesure.</li>
+                    <li>Refonte de sites existants.</li>
+                    <li>Développement d'applications web.</li>
+                    <li>Correction de bugs et optimisation des performances.</li>
+                    
+                </div>
+            </section>
+
+            <!--contact-->
+            <section class="section">
+                <div>
+                   <h2> Mon contact</h2> 
+                   <li>Vous avez un projet ou une idée ? Discutons-en ensemble.</li>
+                   <li>Email : dsewamensah@gmail.com</li>
+                   <li>Téléphone : +228 91 38 21 01</li>
+                   <li>Site web : portefolio.com</li>
+                   <li>GitHub : paponykepler.com</li>
+                </div>
+            </section>
+
+
+    <footer>
+
+    </footer>
+    <script src="portefolio.js">
+        
+    </script>
+</body>
+</html>
+
