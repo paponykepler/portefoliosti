@@ -185,7 +185,7 @@ a{
         height: calc(100vh - 60px);             /*pour ne pas scroller en utilise vh */
         min-height: 400px;
         overflow: hidden;                     /*Masque tout contenu, image ou animation qui
-                                  dépasse les limites de ce conteneur.*/
+                                                 dépasse les limites de ce conteneur.*/
     }
 
     .hero_slides{
@@ -217,6 +217,7 @@ a{
         transform: scale(1);
         transition: transform 0.5s ease;
     }
+
     
 
     .hero_slide.is-active .hero_bg{
