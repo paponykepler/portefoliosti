@@ -163,9 +163,9 @@ a{
     }
 
     /*intégrer le contenu du menu sur l'écran du menu*/
-    /*body.menu-open{
+    body.menu-open{
         overflow: hidden;             /* overflow dans le contexte de menu-open bloque la page principale web et n'ouvre que le menu*/
-    }*/
+    }
 
     @media (min-width: 768px){                  /*si width < 768px c'est écran de téléphone, si width >= 768px c'est écran d'ordinateur*/
     
