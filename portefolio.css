@@ -305,13 +305,17 @@ a{
         background: #4da6ff;
         border-color: #4da6ff;
     }
+
+
     /*style section*/
+
+
     .section{
         padding: 4rem 0;
     }
 
     .section-titre{
-        font-size: clamp(1.5rem, 5vw, 2rem); /*pr que la taille s'adapte au tel et ) l'ordi*/
+        font-size: clamp(1.5rem, 5vw, 2rem);    /*pr que la taille s'adapte au tel et à l'ordi*/
         margin-bottom: 0.75rem;
         color: #fff;
     }
@@ -354,6 +358,18 @@ a{
         color: #4da6ff;
         margin-bottom: 0.25rem;
      }
+
+    .competences_list::after{
+        content:"";
+        display: block;
+        width: 48px;
+        height: 3px;
+        margin-top:0.5rem;
+        background: red;
+        border-radius: 4px;
+
+    }
+
 
     
 
