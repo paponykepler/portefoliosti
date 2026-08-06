@@ -305,7 +305,10 @@ a{
         background: #4da6ff;
         border-color: #4da6ff;
     }
+
+    
     /*style section*/
+
     .section{
         padding: 4rem 0;
     }
@@ -321,7 +324,7 @@ a{
         width: 48px;
         height: 3px;
         margin-top:0.5rem;
-        background: #4da6ff;
+        background: #f53629;
         border-radius: 4px;
     }
     .about{
