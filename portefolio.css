@@ -394,7 +394,8 @@ a{
         text-align: center;
         display:flex;
         justify-content:center;
-        padding-bottom: 2rem;
+        /* padding-bottom: 2rem; */
+        margin-bottom: ;
         
     }
     .competences_list li{
