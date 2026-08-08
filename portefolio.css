@@ -183,7 +183,7 @@ a{
         position: relative;
         width: 100%;
         height: calc(100vh - 60px);             /*pour ne pas scroller en utilise vh */
-        min-height: 600px;
+        min-height: 400px;
         overflow: hidden;                     /*Masque tout contenu, image ou animation qui
                                                  dépasse les limites de ce conteneur.*/
     }
