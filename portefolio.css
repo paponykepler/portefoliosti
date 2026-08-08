@@ -365,6 +365,7 @@ a{
         background:#8a8484;
         padding-top: 1rem;
         width:40%;
+        display: flex;
         justify-content:center;
      }
     .section-titre2{
