@@ -364,8 +364,9 @@ a{
     .section-titre2{
         text-align: center;
         background:#37961a;
-        border-radius:80%;
+        border-radius:55%;
         width:230px;
+        height:auto;
         display:flex;
         justify-content:center;
     }
