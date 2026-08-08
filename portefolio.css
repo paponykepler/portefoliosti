@@ -370,7 +370,10 @@ a{
         border-radius: 4px;
 
     }
-
+    .section-titre2{
+        background:#37961a;
+        border-radius:50%;
+    }
     .competences_list{
         list-style: none;
     }
