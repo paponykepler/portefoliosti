@@ -385,12 +385,13 @@ a{
         margin-bottom:0.5rem;
         padding: 2rem 0;
     }
-    .competences_list{
+    .competences_list li{
         list-style: none;
+        align-items: space-between;
         
     }
     .competences_label{
-        align-items: space-between;
+        
     }
 
     
