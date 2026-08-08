@@ -360,20 +360,11 @@ a{
         margin-bottom: 0.25rem;
      }
 
-    .section_comp::after{
-        content:"";
-        display: block;
-        width: 48px;
-        height: 3px;
-        margin-top:0.5rem;
-        background: red;
-        border-radius: 4px;
-
-    }
+    
     .section-titre2{
         background:#37961a;
         border-radius:50%;
-        width:150px;
+        width:180px;
         justify-content:center;
     }
     .competences_list{
