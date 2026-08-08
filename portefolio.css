@@ -373,6 +373,7 @@ a{
         display: flex;
         justify-content:center;
         padding-bottom: 1rem;
+        padding-left: 1rem;
      }
 
     .vert{
