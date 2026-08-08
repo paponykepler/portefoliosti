@@ -320,13 +320,13 @@ a{
         margin-bottom: 0.75rem;
         color: #fff;
     }
-    .section-titre::after{ /*tracer un petit trait en dessous du titre*/
-        content:"";
-        display: block;
-        width: 48px;
+    .section-titre::after{                  /*tracer un petit trait en dessous du titre*/
+        content:"";                         /* pour que le pseudo-élément s'affiche. Le texte reste vide.*/
+        display: block; 
+        width: 100px;
         height: 3px;
         margin-top:0.5rem;
-        background: #4da6ff;
+        background: #4da6ff;             /* couleur du trait*/
         border-radius: 4px;
     }
     .about{
