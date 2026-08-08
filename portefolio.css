@@ -321,9 +321,9 @@ a{
         color: #fff;
     }
     .section-titre::after{                  /*tracer un petit trait en dessous du titre*/
-        content:"";                         /* pour que le pseudo-élément s'affiche. Le texte reste vide.*/
+        content:"";                         /* pour que le trait s'affiche*/
         display: block; 
-        width: 100px;
+        width: 48px;
         height: 3px;
         margin-top:0.5rem;
         background: #4da6ff;             /* couleur du trait*/
@@ -354,8 +354,8 @@ a{
      .about_label{
         display: block;
         font-size: 0.8rem;  
-        text-transform: uppercase; /* met les textex en majuscule sans passer par html*/
-        letter-spacing: 0.05rem;  /*met un petit écart entre les lettres*/
+        text-transform: uppercase;         /* met les textex en majuscule sans passer par html*/
+        letter-spacing: 0.05rem;           /*met un petit écart entre les lettres*/
         color: #4da6ff;
         margin-bottom: 0.25rem;
      }

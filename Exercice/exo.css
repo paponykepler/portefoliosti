@@ -1,0 +1,25 @@
+.container{
+   display:grid;
+   /* grid-template-columns: 1fr 2fr 3fr 2fr; */
+   align-items: space-between;
+
+   /* grid-template-rows: 100px 100px; */
+   /* gap: 10px; */
+}
+
+
+.navbar{
+    background-color:blueviolet;
+   
+}
+.sidebar{
+    background-color:lightblue;
+    flex-direction: column;
+}
+.main-content{
+    background-color:lightgreen;
+}
+.footer{
+    background-color:lightcoral;
+
+}
