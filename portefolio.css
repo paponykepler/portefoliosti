@@ -369,7 +369,7 @@ a{
         height:auto;
         display:flex;
         justify-content:center;
-        padding-bottom:0.5rem;
+        margin-bottom:0.5rem;
     }
     .competences_list{
         list-style: none;
