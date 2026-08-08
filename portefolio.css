@@ -385,9 +385,9 @@ a{
     } 
     .section-titre2{
         text-align: center;
-        
         display:flex;
         justify-content:center;
+        padding-bottom: 1rem;
         
     }
     .competences_list li{
