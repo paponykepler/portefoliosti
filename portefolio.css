@@ -360,7 +360,10 @@ a{
         margin-bottom: 0.25rem;
      }
 
-    
+    .section2{
+        display: flex;
+        justify-content: center;
+    }
     .container2{
         background:#8a8484;
         padding-top: 1rem;
