@@ -374,7 +374,7 @@ a{
         justify-content:center;
         padding-bottom: 1rem;
         padding-left: 0.5rem;
-        align-items: center;
+        /* align-items: center; */
      }
 
     .vert{
