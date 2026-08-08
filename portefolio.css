@@ -376,10 +376,10 @@ a{
      }
     .section-titre2{
         text-align: center;
-        background:red;
+        background:#37961a;
         border-radius:55%;
         width:250px;
-        height:auto;
+        /* height:auto; */
         display:flex;
         justify-content:center;
         margin-bottom:2rem;
@@ -387,7 +387,7 @@ a{
     }
     .competences_list li{
         list-style: none;
-        flex-direction: column;
+        /* flex-direction: column; */
         
     }
     .competences_label{
