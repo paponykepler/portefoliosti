@@ -363,6 +363,7 @@ a{
     
     .container2{
         background:#8a8484;
+        padding-top: 1rem;
      }
     .section-titre2{
         text-align: center;
@@ -373,7 +374,7 @@ a{
         display:flex;
         justify-content:center;
         margin-bottom:0.5rem;
-        margin-top: 1rem;
+        
         padding:0.5rem 0;
     }
     .competences_list{
