@@ -387,6 +387,7 @@ a{
     }
     .competences_list{
         list-style: none;
+        align-items: space-between;
     }
     
 
