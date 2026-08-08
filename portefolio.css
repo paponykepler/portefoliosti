@@ -183,7 +183,7 @@ a{
         position: relative;
         width: 100%;
         height: calc(100vh - 60px);             /*pour ne pas scroller en utilise vh */
-        min-height: 400px;
+        min-height: 600px;
         overflow: hidden;                     /*Masque tout contenu, image ou animation qui
                                                  dépasse les limites de ce conteneur.*/
     }
@@ -217,9 +217,6 @@ a{
         
         transform: scale(1);
         transition: transform 0.5s ease;
-    }
-    .hero_bg > img{
-          object-fit: contain;
     }
 
     
