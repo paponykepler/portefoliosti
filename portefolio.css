@@ -310,7 +310,7 @@ a{
 
     /*style section*/
 
-
+/*Mise en forme de la section 1*/
     .section{
         padding: 4rem 0;
     }
@@ -361,7 +361,7 @@ a{
      }
 
 
-
+/*Mise en forme de la section 2*/
     .section2{
         display: flex;
         justify-content: center;
@@ -378,7 +378,7 @@ a{
         
      }
 
-    .rond-vert{
+    .rond{
        background:#4da6ff;
         border-radius:55%;
         width:250px;
@@ -387,6 +387,7 @@ a{
         padding: 0.75rem 0;
     } 
     .section-titre2{
+        font-size: clamp(1.5rem, 5vw, 2rem);
         text-align: center;
         display:flex;
         justify-content:center;
@@ -397,12 +398,9 @@ a{
     .competences_list li{
         list-style: none;
         margin-left:1rem;
-        /* flex-direction: column; */
-        
+        /* flex-direction: column; */   
     }
-    .competences_label{
-        
-    }
+    
 
     
 
