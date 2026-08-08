@@ -362,7 +362,7 @@ a{
 
     
     .section-titre2{
-        margin-left:auto;
+        text-align: center;
         background:#37961a;
         border-radius:50%;
         width:200px;
