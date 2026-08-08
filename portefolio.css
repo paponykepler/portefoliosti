@@ -373,6 +373,7 @@ a{
     .section-titre2{
         background:#37961a;
         border-radius:50%;
+        width:500px;
     }
     .competences_list{
         list-style: none;
