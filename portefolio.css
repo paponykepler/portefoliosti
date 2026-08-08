@@ -370,6 +370,7 @@ a{
         width:40%;
         display: flex;
         justify-content:center;
+        padding-bottom: 1rem;
      }
     .section-titre2{
         text-align: center;
