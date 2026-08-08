@@ -375,8 +375,11 @@ a{
         background-color:#37961a;
         width:200px;
         height:auto;
+        border-radius: 2px;
     }
-
+    .container2 section-titre{
+        border-radius: 50%;
+    }
 
     
 
