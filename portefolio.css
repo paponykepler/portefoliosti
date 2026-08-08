@@ -383,6 +383,7 @@ a{
         width:250px;
         height:150px;
         margin-bottom:2rem;
+        
         padding: 0.75rem 0;
     } 
     .section-titre2{
@@ -395,6 +396,7 @@ a{
     }
     .competences_list li{
         list-style: none;
+        margin-left:1rem;
         /* flex-direction: column; */
         
     }
