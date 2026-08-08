@@ -368,7 +368,7 @@ a{
     }
     .container2{
         background-color: #4da6ff;
-        padding-top: 1rem;
+        padding-top: 1.5rem;
         width:45%;
         display: flex;
         justify-content:center;
@@ -383,7 +383,6 @@ a{
         width:250px;
         height:150px;
         margin-bottom:2rem;
-        
         padding: 0.75rem 0;
     } 
     .section-titre2{
