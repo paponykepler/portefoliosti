@@ -387,9 +387,11 @@ a{
     }
     .competences_list{
         list-style: none;
-        justify-content: space-between;
+        
     }
-    
+    .competences_label{
+        align-items: space-between;
+    }
 
     
 
