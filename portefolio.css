@@ -411,12 +411,18 @@ a{
 
 .services{
     display: grid;    /*Active le mode disposition lignes & colonnes pour les éléments enfants de la section services*/
-    /* gap: 2rem; */
+    gap: 2rem; 
 }
 .services_list{
     list-style: none;
     display: flex;
     gap: 11rem;
+}
+.services_list li{
+    padding: 1rem 1.5rem;
+    background: #16213e;
+    border-radius: 8px;
+    border-left: 3px solid #4da6ff;
 }
 
 
