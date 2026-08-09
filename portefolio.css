@@ -363,7 +363,7 @@ a{
 
 /*Mise en forme de la section 2*/
 
-    .section{
+    .section2{
         padding: 4rem 0;
     }
     .section2{
@@ -393,7 +393,7 @@ a{
         align-items: flex-start;
     
     } 
-    .section-titre2{
+    .section2-titre{
         font-size: clamp(1.5rem, 5vw, 2rem);
         text-align: center;
         display:flex;
@@ -412,7 +412,7 @@ a{
 
 /*Mise en forme de la section 4*/
 
-    .section{
+    .section4{
         padding: 4rem 0;
     }
     .section4{
@@ -443,7 +443,7 @@ a{
         margin-left: -40px;
     
     } 
-    .section-titre4{
+    .section4-titre{
         font-size: clamp(1.5rem, 5vw, 2rem);
         text-align: center;
         display:flex;
