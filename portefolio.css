@@ -406,8 +406,8 @@ a{
 
 
 
-
-     .section4{
+/*Mise en forme de la section 4*/
+    .section4{
         display: flex;
         justify-content: center;
     }
@@ -439,10 +439,10 @@ a{
         text-align: center;
         display:flex;
         justify-content:center;
-        margin-top:-11px;
+        margin-top: 8px;
         
     }
-    .competences_list li{
+    .contact_list li{
         list-style: none;
         margin-left:1rem;
         /* flex-direction: column; */   
