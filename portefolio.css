@@ -407,7 +407,11 @@ a{
         /* flex-direction: column; */   
     }
     
+/*Mise en forme de la section 3*/
 
+.services{
+    display: grid;
+}
 
 
 /*Mise en forme de la section 4*/
