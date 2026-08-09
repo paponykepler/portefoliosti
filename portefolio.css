@@ -413,6 +413,11 @@ a{
     display: grid;
     gap: 2rem;
 }
+.services_list{
+    list-style: none;
+    display: flex;
+    gap: 11rem;
+}
 
 
 /*Mise en forme de la section 4*/
