@@ -330,7 +330,7 @@ a{
         border-radius: 4px;
     }
     .about{
-        display: grid;
+        display: grid;    /*Active le mode disposition lignes & colonnes pour les éléments enfants de la section services*/
         gap: 2rem;
     }
 
@@ -410,8 +410,8 @@ a{
 /*Mise en forme de la section 3*/
 
 .services{
-    display: grid;
-    gap: 2rem;
+    display: grid;    /*Active le mode disposition lignes & colonnes pour les éléments enfants de la section services*/
+    /* gap: 2rem; */
 }
 .services_list{
     list-style: none;
