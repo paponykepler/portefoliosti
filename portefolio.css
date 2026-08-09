@@ -417,7 +417,7 @@ a{
         width:47%;
         display: flex;
         justify-content:center;
-        padding-bottom: -10px;
+        /* padding-bottom: -10px; */
         padding-left: -8px;
         border-radius: 0.5rem;
         
@@ -446,7 +446,7 @@ a{
     .contact_list li{
         list-style: none;
         margin-left:1rem;
-        /* flex-direction: column; */   
+        flex-direction: column;   
     }
 
     
