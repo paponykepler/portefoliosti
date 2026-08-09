@@ -417,7 +417,7 @@ a{
         width:47%;
         display: flex;
         justify-content:center;
-        padding-bottom: -10px;
+        padding-bottom: 1px;
         padding-left: -8px;
         border-radius: 0.5rem;
         
