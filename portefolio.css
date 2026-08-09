@@ -404,5 +404,49 @@ a{
     }
     
 
+
+
+
+     .section4{
+        display: flex;
+        justify-content: center;
+    }
+    .container4{
+        background-color: #16213e;
+        padding-top: 1.5rem;
+        width:47%;
+        display: flex;
+        justify-content:center;
+        padding-bottom: 0.1px;
+        padding-left: 0.70rem;
+        border-radius: 0.5rem;
+        
+     }
+
+    .rond{
+       background:#4da6ff;
+        border-radius:55%;
+        width:250px;
+        height:125px;
+        margin-bottom:2rem;
+        margin-top: 0.8rem;
+        padding: 0.75rem 0;
+        align-items: flex-start;
+    
+    } 
+    .section-titre4{
+        font-size: clamp(1.5rem, 5vw, 2rem);
+        text-align: center;
+        display:flex;
+        justify-content:center;
+        margin-top:-11px;
+        
+    }
+    .competences_list li{
+        list-style: none;
+        margin-left:1rem;
+        /* flex-direction: column; */   
+    }
+
     
 
