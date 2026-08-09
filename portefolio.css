@@ -417,7 +417,7 @@ a{
         width:47%;
         display: flex;
         justify-content:center;
-        margin-bottom: -5px; */
+        margin-bottom: -5px; 
         padding-left: -8px;
         border-radius: 0.5rem;
         
@@ -447,8 +447,13 @@ a{
         list-style: none;
         margin-left:1rem;
         flex-direction: column; 
-        padding-top: 2px;  
+        padding-top: 2px; 
     }
 
-    
+    .contact_list li,
+    .contact_label{
+        color: #fff;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
 
