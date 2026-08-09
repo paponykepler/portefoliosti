@@ -362,6 +362,10 @@ a{
 
 
 /*Mise en forme de la section 2*/
+
+    .section{
+        padding: 4rem 0;
+    }
     .section2{
         display: flex;
         justify-content: center;
@@ -407,6 +411,10 @@ a{
 
 
 /*Mise en forme de la section 4*/
+
+    .section{
+        padding: 4rem 0;
+    }
     .section4{
         display: flex;
         justify-content: center;
