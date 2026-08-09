@@ -411,6 +411,7 @@ a{
 
 .services{
     display: grid;
+    gap: 2rem;
 }
 
 
