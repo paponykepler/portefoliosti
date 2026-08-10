@@ -281,7 +281,7 @@ img{
 
   
 
-   /* .hero_content{
+    .hero_content{
         position: relative;
         z-index: 2;
         display: flex;
@@ -291,7 +291,7 @@ img{
         padding: 1.5rem 1rem 4rem;
         max-width: 600px;
         margin: 0 auto;
-    }*/
+    }
 
     .hero_content h1{
         font-size: clamp(1.75rem, 5vw, 2.5rem);    /* pour s'adapter aux 2 écrans*/
