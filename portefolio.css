@@ -354,7 +354,7 @@ a{
      .about_label{
         display: block;
         font-size: 0.8rem;  
-        text-transform: uppercase;         /* met les textex en majuscule sans passer par html*/
+        text-transform: uppercase;         /* met les textes en majuscule sans passer par html*/
         letter-spacing: 0.05rem;           /*met un petit écart entre les lettres*/
         color: #4da6ff;
         margin-bottom: 0.25rem;
