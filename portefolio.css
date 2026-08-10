@@ -281,7 +281,7 @@ img{
 
   
 
-    .hero_content{
+   /* .hero_content{
         position: relative;
         z-index: 2;
         display: flex;
@@ -291,7 +291,7 @@ img{
         padding: 1.5rem 1rem 4rem;
         max-width: 600px;
         margin: 0 auto;
-    }
+    }*/
 
     .hero_content h1{
         font-size: clamp(1.75rem, 5vw, 2.5rem);    /* pour s'adapter aux 2 écrans*/
@@ -459,14 +459,14 @@ img{
      }
 
 
-     .about_label{
+     /*.about_label{
         display: block;
         font-size: 0.8rem;  
         text-transform: uppercase;         /* met les textes en majuscule sans passer par html*/
-        letter-spacing: 0.05rem;           /*met un petit écart entre les lettres*/
-        color: #4da6ff;
-        margin-bottom: 0.25rem;
-     }
+        /*letter-spacing: 0.05rem; */          /*met un petit écart entre les lettres*/
+       /* color: #4da6ff;*/
+       /* margin-bottom: 0.25rem;*/
+    /* }*/
 
 
 /*Mise en forme de la section 2*/
