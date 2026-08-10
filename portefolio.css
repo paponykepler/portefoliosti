@@ -1,3 +1,9 @@
+html{
+    scroll-behavior: smooth;  /* pour que le défilement de la page soit fluide*/
+}
+
+
+
 *{                              /* l'étoile est un sélecteur universel que veut 
                                qu'on applique ces 3 propriétés à toutes les balises de la page web*/
     box-sizing: border-box;
@@ -37,9 +43,23 @@ body{                                           /* Ce sélecteur body c'est pour
     height: 60px; 
 }
 
+.header{
+    position:fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #333;
+    background: #0f0f23;
+    z-index: 100;            /* pour qu'en défilant la page du site les choses passent en dessous du nom du header qui est en haut*/
+}
 a{
     color: #4da6ff;
    text-decoration: none;         /* Pour enlever le soulignement d'un lien */
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .logo img{                /*ceci concerne uniquement l'image du logo*/
@@ -132,10 +152,14 @@ a{
         padding: 0 1rem;
        }
        .bar{
-        flex: 1;                  /* occupe l'espace qui est disponible*/
-        max-width: 1000px;
+        flex: 0 0 auto;                  /* occupe l'espace qui est disponible*/
+        max-width: none;
+        width:auto;
         padding: 0;
+        margin: 0;
+        height: 60px;
        }
+
        .menu-btn{
         display: none;             /*pour cacher le menu*/
        }
@@ -145,10 +169,13 @@ a{
         background: none;
         padding: 0;
         width: auto;
+        margin-left: auto;
        }
        .menu ul{
         display: flex;
-        gap: 0.5rem;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 0.25rem;
         
        }
        .menu li{
@@ -157,8 +184,9 @@ a{
        }
 
        .menu a{
-        padding: 0.5rem 1rem;
-        font-size: 1rem;
+        padding: 0.5rem 0.75rem;
+        font-size: 0.95rem;
+        white-space: nowrap;          /* pour que le texte du menu ne se casse pas sur 2 lignes*/
        }
     }
 
@@ -173,7 +201,9 @@ a{
             overflow: auto;           /*pour fair apparaître la barre de défilement lorsque le texte du menu déborde*/
         }
     }
-    
+    main{
+        padding-top: 60px;        /* pour que le contenu de la page ne soit pas caché par le header*/
+    }
     
     /* le code ci-dessous permet de styliser une section principale 
     pour qu'elle occupe toute la largeur de l'écran et 
@@ -183,7 +213,8 @@ a{
         position: relative;
         width: 100%;
         height: calc(100vh - 60px);             /*pour ne pas scroller en utilise vh */
-        min-height: 400px;
+        min-height: 320px;
+        max-height: 900px;
         overflow: hidden;                     /*Masque tout contenu, image ou animation qui
                                                  dépasse les limites de ce conteneur.*/
     }
@@ -222,9 +253,13 @@ a{
     
 
     .hero_slide.is-active .hero_bg{
-        transform: scale(1.6);
+        transform: scale(1.08);   /* pour agrandir l'image de fond lorsqu'elle est active*/
     }
-
+    @media(min-width: 768px){
+        .hero_slide.is-active .hero_bg{
+            transform: scale(1.15);   /* pour que l'image de fond ne bouge pas lorsqu'on scroll la page*/
+        }
+    }
     .cover{
         position: absolute;
         inset: 0;
@@ -236,16 +271,27 @@ a{
         );
     }
 
-    .hero_content{
+    @media(min-width: 768px){
+        .hero_content{
+            margin: 0;
+            padding: 2rem 2rem 4rem;
+            max-width: 640px;
+        }   
+    }
+
+  
+
+   /* .hero_content{
         position: relative;
         z-index: 2;
         display: flex;
         flex-direction: column;
         justify-content: center;
         height: 100%;
-        padding: 2rem 1rem;
+        padding: 1.5rem 1rem 4rem;
         max-width: 600px;
-    }
+        margin: 0 auto;
+    }*/
 
     .hero_content h1{
         font-size: clamp(1.75rem, 5vw, 2.5rem);    /* pour s'adapter aux 2 écrans*/
@@ -338,19 +384,81 @@ a{
         margin-bottom: 1rem;
         color: #fff;
     }
+    .about_text p + p{
+        margin-top: 1rem;
+    }
     .about_list{
         list-style: none;
         display: flex;
+        flex-direction:column;
         gap: 11rem;
     }
 
     .about_list li{
         padding: 1rem 1.5rem;
         background: #16213e;
-        border-radius: 8px;
+        border-radius: 0 8px 8px 0;
         border-left: 3px solid #4da6ff;
         color: #d0d0e0;
     }
+    @media (min-width: 600px){
+        .about_list{
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+    .about_list li{
+        flex: 1 1 calc(50% - 0.5rem);
+        min-width: 0;
+     }
+     
+     @media (min-width: 900px){
+        about{
+            grid-template-columns: 1.2fr 1fr;
+            align-items: start;
+            gap: 3rem;
+        }
+     }
+
+     .about_list{
+        flex-direction: column;
+     }
+     .about_list li{
+        flex: none;
+        width:100%
+     }
+     
+     @media(max-width: 480px){
+        .section{
+            padding: 2.5rem 0;
+        }
+        .section2{
+            padding: 2.5rem 0;
+        }
+        .section4{
+            padding: 2.5rem 0;
+        }
+
+     }
+     .logo{
+        font-size: 1rem;
+     }
+     .log img{
+        height: 30px;
+     }
+
+     .hero_content h1{
+        font-size: 1.5rem;
+     }
+     .hero_btn{
+        width: 100%;
+        text-align: center;
+     }
+     .hero_dots{
+        bottom: 1rem;
+     }
+
+
      .about_label{
         display: block;
         font-size: 0.8rem;  
