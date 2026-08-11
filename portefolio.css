@@ -428,7 +428,7 @@ img{
         width:100%
      }
      
-     @media(max-width: 480px){
+    /* @media(max-width: 480px){
         .section{
             padding: 2.5rem 0;
         }
@@ -439,7 +439,7 @@ img{
             padding: 2.5rem 0;
         }*/
 
-     }
+     
      .logo{
         font-size: 1rem;
      }
