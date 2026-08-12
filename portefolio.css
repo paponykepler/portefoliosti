@@ -421,7 +421,8 @@ img{
      }
 
      .about_list{
-        flex-direction: column;
+        /* flex-direction: column; */
+        display: flex;
      }
      .about_list li{
         flex: none;
