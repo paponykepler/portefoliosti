@@ -425,7 +425,7 @@ img{
         display: flex;
      }
      .about_list li{
-        flex: none;
+        /* flex: none; */
         width:100%
      }
      
