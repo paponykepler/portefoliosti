@@ -404,8 +404,9 @@ img{
     @media (min-width: 600px){
         .about_list{
             /* flex-direction: row; */
-            /* flex-wrap: wrap; */
+            flex-wrap: wrap;
             display: flex;
+            
         }
     }
     .about_list li{
